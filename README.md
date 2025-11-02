@@ -1,73 +1,41 @@
 # Paper 2 — Logit: Recession Probability from the Yield Curve (12-Month Horizon)
 
-This repository is a **publication-style showcase** for the analysis featured in  
-**“When the Curve Speaks: Estimating Recession Risk with a Logistic Classification Model.”**  
-It demonstrates results and method summary without exposing the full implementation.
+**Purpose**  
+This repository provides the technical materials and figures that accompany the Substack article, without exposing the full implementation details.
 
-- 🔗 **Companion article:** https://thebaselpoint.substack.com/p/when-the-curve-speaks
-- 📊 **Preview (HTML):** `Paper2_Logit_Recession_12m_preview.html` (in this repo)
-- 🖼️ **Figures:** `roc_auc_curve.png`, `recession_probabilities.png`
+**Companion article:** “When the Curve Speaks: Estimating Recession Risk with a Logistic Classification Model”  
+https://thebaselpoint.substack.com/p/when-the-curve-speaks
 
----
+## Summary
+We estimate a 12-month-ahead U.S. recession probability using a logistic classification model with yield-curve spreads. The preview here presents results, method notes, and selected figures. Full implementation is withheld.
 
-## What this shows
-- Key results (ROC/AUC, probability series, zoomed recent window)
-- A concise methods description in plain English
-- Source attribution for macro data (FRED)
+**Method (brief):**
+- Predictors: 10Y–3M and 10Y–2Y spreads
+- Lags: 1-month and 6-month
+- Evaluation: expanding-window (walk-forward)
+- Outputs: ROC/AUC, precision/recall snapshot, full-history probability with NBER shading, and a recent-window view
 
-## What this omits (by design)
-- Full notebook and pipeline logic
-- Raw datasets and private paths
-- Parameter sweeps and internal utilities
-
-If you’re a hiring team, PM, or researcher who needs **full technical review**, contact me for access.
-
----
-
-## Methods (summary)
-We estimate a 12-month-ahead U.S. recession probability with a **logistic classification model**, using yield curve spreads as predictors:
-- Spreads: **10Y–3M** and **10Y–2Y**
-- Lags: **1-month** and **6-month**
-- Backtest: **expanding-window (walk-forward)** evaluation
-- Outputs: ROC/AUC, precision/recall snapshot, full-history probability with NBER shading, zoomed last-10-years view
-
-This preview includes charts and a narrative summary sufficient for expert readers to understand the approach, while withholding cloneable implementation details.
-
----
+## Figures
+- `figures/recession_prob_12m_full.png`
+- `figures/recession_prob_12m_last_8y.png`
+- `figures/roc_walk_forward.png`
+- `figures/confusion_matrix_fed_style.png` 
 
 ## Data Sources
-- Federal Reserve Economic Data (FRED): constant-maturity Treasury series and NBER recession indicator.
-- Other macro sources as cited in the article.
+- Federal Reserve Economic Data (FRED) for Treasury yields and the NBER recession indicator.
+- Additional macro sources as referenced in the article.
+  
+No raw data files are included in this repository.
 
-> Note: No raw data files are included in this repository.
+## Environment
+- Jupyter Notebook
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
+- statsmodels
 
----
-
-## Environment (minimal)
-The analysis was built with Python and common scientific libraries:
-pandas
-numpy
-matplotlib
-scikit-learn
-statsmodels
-
----
-
-## Access & Contact
-- Full code and datasets are available **by request for professional review**.
-- Please reach out via Substack or your preferred contact channel.
-
----
-
-## License & Use
-© 2025 S.Y. Kim. All rights reserved.  
-You may reference the figures and this summary with attribution.  
-**Reuse of source code, data, or methods requires permission.**
-Copyright (c) 2025 S.Y. Kim. All rights reserved.
-
-This repository contains publication-style materials (figures, previews, and summaries).
-You may reference or quote the materials with attribution.
-
-Reuse, reproduction, or redistribution of source code, data, or methods is prohibited
-without prior written permission from the copyright holder.
+## Access
+Full notebooks and datasets are available upon request for professional review.
+Please contact: thebaselpoint@gmail.com
 
