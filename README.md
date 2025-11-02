@@ -45,3 +45,29 @@ This preview includes charts and a narrative summary sufficient for expert reade
 
 ## Environment (minimal)
 The analysis was built with Python and common scientific libraries:
+pandas
+numpy
+matplotlib
+scikit-learn
+statsmodels
+
+---
+
+## Access & Contact
+- Full code and datasets are available **by request for professional review**.
+- Please reach out via Substack or your preferred contact channel.
+
+---
+
+## License & Use
+© 2025 S.Y. Kim. All rights reserved.  
+You may reference the figures and this summary with attribution.  
+**Reuse of source code, data, or methods requires permission.**
+Copyright (c) 2025 S.Y. Kim. All rights reserved.
+
+This repository contains publication-style materials (figures, previews, and summaries).
+You may reference or quote the materials with attribution.
+
+Reuse, reproduction, or redistribution of source code, data, or methods is prohibited
+without prior written permission from the copyright holder.
+
