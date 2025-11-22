@@ -2,7 +2,7 @@
 
 This repository provides the technical companion materials for the article published on *The Basel Point* Substack:
 
-📘 **Companion Article:**  
+ **Companion Article:**  
 [*When the Curve Speaks: Estimating Recession Risk with a Logistic Classification Model*](https://thebaselpoint.substack.com/p/when-the-curve-speaks)
 
 ---
